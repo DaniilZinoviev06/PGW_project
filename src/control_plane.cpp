@@ -1,9 +1,9 @@
-#include <control_plane.h>
+#include <../include/control_plane.h>
 #include <iostream>
 #include <random>
-#include "pdn_connection.h"
+#include "../include/pdn_connection.h"
 
-#include "bearer.h"
+#include "../include/bearer.h"
 
 using std::cout;
 using std::endl;

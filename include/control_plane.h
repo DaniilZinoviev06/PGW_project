@@ -1,7 +1,7 @@
 // комментарии больше для себя писал, для удобства
 #pragma once
 
-#include <pdn_connection.h>
+#include <../include/pdn_connection.h>
 #include <boost/asio/ip/address.hpp>
 #include <memory>
 #include <boost/asio.hpp>
