@@ -19,7 +19,7 @@ struct server_configuration {
 class ServerConf {
 public:
     ServerConf(const std::string& file_path) : data(load_data_from_json(file_path)) {
-        check_data();
+        check_data(data);
     }
 
     ServerConf(const ServerConf&) = delete;
@@ -32,8 +32,10 @@ public:
 
     const server_configuration& get_conf() const { return data; }
 
-private:
-    void check_data();
+    void check_data(const server_configuration& config);
+
     static server_configuration load_data_from_json(std::string file_path);
+
+private:
     server_configuration data;
 };

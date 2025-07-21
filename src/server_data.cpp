@@ -4,6 +4,7 @@
 #include <nlohmann/json.hpp>
 #include <stdexcept>
 // #include <sys/inotify.h>
+#include <set>
 
 using json = nlohmann::json;
 
@@ -41,6 +42,7 @@ server_configuration ServerConf::load_data_from_json(std::string file_path) {
 }
 
 void ServerConf::check_data(const server_configuration& config) {
+    // Проверка портов
     if (config.udp_port < static_cast<uint16_t>(49152)) {
         throw std::runtime_error("Некорректный порт UDP");
     }
@@ -53,8 +55,34 @@ void ServerConf::check_data(const server_configuration& config) {
         throw std::runtime_error("Порты должны различаться");
     }
 
+    // Проверка IP-адреса
     if (config.udp_ip.is_unspecified()) {
         throw std::runtime_error("Некорректный IP-адрес");
+    }
+
+    if (config.cdr_log.empty()) {
+        throw std::runtime_error("Пустой путь cdr_file");
+    }
+
+    if (config.pgw_log_file.empty()) {
+        throw std::runtime_error("Пустой путь log_file");
+    }
+
+    if (config.log_level.empty()) {
+        throw std::runtime_error("Пустой уровень логирования");
+    }
+
+    const std::set<std::string> valid_log_levels = {"DEBUG", "INFO", "WARN", "CRITICAL", "ERROR"};
+    if (valid_log_levels.find(config.log_level) == valid_log_levels.end()) {
+        throw std::runtime_error("Некорректный уровень логирования");
+    }
+
+    if (config.session_timeout_sec == 0) {
+        throw std::runtime_error("Таймаут сессии не может быть равным 0");
+    }
+
+    if (config.graceful_shutdown_rate == 0) {
+        throw std::runtime_error("Параметр graceful не может быть равным 0");
     }
 }
 

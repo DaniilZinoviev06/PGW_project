@@ -14,7 +14,7 @@ class UDPServer {
 public:
     explicit UDPServer(const server_configuration& config) :
         server_conf_data(config), cp(),
-        session_handler(cp, config.imsi_blacklist, config.cdr_log, config.session_timeout_sec, 0.2)
+        session_handler(cp, config.imsi_blacklist, config.cdr_log, config.cdr_log, config.session_timeout_sec, 0.2)
     {
         socket_fd = socket(AF_INET, SOCK_DGRAM, 0);
         if (socket_fd == -1) {
@@ -44,7 +44,7 @@ public:
             ssize_t n = recvfrom(socket_fd, buffer, sizeof(buffer), 0, (sockaddr*)&cliaddr, &len);
             if (n > 0) {
                 std::string imsi(buffer, n);
-                std::string response = process_imsi(imsi);
+                std::string response = decode_imsi(imsi);
                 sendto(socket_fd, response.c_str(), response.size(), 0, (sockaddr*)&cliaddr, len);
             }
         }
@@ -56,11 +56,36 @@ public:
     }
 
 private:
-    std::string process_imsi(const std::string& imsi) {
-        if (session_handler.is_imsi_blacklisted(imsi)) {
+    std::string decode_imsi(const std::string& tbcd_imsi) {
+        std::string decode;
+
+        if (tbcd_imsi.size() != 8) {
+            std::cerr << "Некорректный IMSI\n";
             return "rejected";
         }
 
+        for (uint8_t data_tbcd : tbcd_imsi) {
+            uint8_t low_digit = data_tbcd & 0b00001111;
+            uint8_t high_digit = data_tbcd >> 4;
+
+            if (low_digit <= 9)
+                decode += '0' + low_digit;
+            if (high_digit <= 9)
+                decode += '0' + high_digit;
+        }
+
+        if (!decode.empty() && decode.back() == 'F') {
+            decode.pop_back();
+        }
+
+        // std::cout << "декодированный IMSI: " << decode << std::endl;
+
+        if (session_handler.is_imsi_blacklisted(decode)) {
+            session_handler.log_cdr(decode, "rejected");
+            return "rejected";
+        }
+
+        session_handler.log_cdr(decode, "created");
         return "created";
     }
 

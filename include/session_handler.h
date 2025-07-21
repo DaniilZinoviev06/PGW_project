@@ -5,12 +5,13 @@
 #include <algorithm>
 #include <functional>
 #include <cmath>
+#include "cdr_logger.h"
 
 class SessionHandler {
 public:
     SessionHandler(control_plane& cp_ref,
-        const std::vector<std::string>& blacklist, const std::string& cdr_log_path, uint16_t session_timeout, double false_positive_prob = 0.3)
-        : cp(cp_ref), session_timeout(session_timeout), cdr_log_file(cdr_log_path),
+        const std::vector<std::string>& blacklist, const std::string& cdr_log, const std::string& cdr_log_path, uint16_t session_timeout, double false_positive_prob = 0.3)
+        : cp(cp_ref), cdr_logger(std::make_unique<CDRLogger>(cdr_log)), session_timeout(session_timeout), cdr_log_file(cdr_log_path),
             bloom_filter_size(calculate_bloom_size(blacklist.size(), false_positive_prob)),
             num_hash_funcs(calculate_hash_count(blacklist.size(), bloom_filter_size)),
             bloom_filter(bloom_filter_size), imsi_blacklist(blacklist)
@@ -23,6 +24,10 @@ public:
             << false_positive_prob * 100 << "\n";*/
     }
 
+    void log_cdr(const std::string& imsi, const std::string& action) {
+        cdr_logger->log(imsi, action);
+    }
+
     bool is_imsi_blacklisted(const std::string& imsi) {
         if (!bloom_filter_check(imsi)) {
             return false;
@@ -32,6 +37,7 @@ public:
 
 private:
     control_plane& cp;
+    std::unique_ptr<CDRLogger> cdr_logger;
     uint16_t session_timeout;
     std::string cdr_log_file;
     size_t bloom_filter_size;

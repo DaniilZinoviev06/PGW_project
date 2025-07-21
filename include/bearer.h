@@ -2,8 +2,6 @@
 
 #include <boost/asio/ip/address_v4.hpp>
 
-// здесь добавил лимиты
-
 class pdn_connection;
 
 class bearer {
