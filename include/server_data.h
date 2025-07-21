@@ -18,7 +18,9 @@ struct server_configuration {
 
 class ServerConf {
 public:
-    ServerConf(std::string file_path) : path(std::move(file_path)) {};
+    ServerConf(const std::string& file_path) : data(load_data_from_json(file_path)) {
+        check_data();
+    }
 
     ServerConf(const ServerConf&) = delete;
     ServerConf& operator=(const ServerConf&) = delete;
@@ -26,12 +28,12 @@ public:
     ServerConf(ServerConf&&) = default;
     ServerConf& operator=(ServerConf&&) = default;
 
-    static server_configuration load_data_from_json(std::string file_path);
-
     // void file_surveillance();
 
-    void check_data(const server_configuration& config);
+    const server_configuration& get_conf() const { return data; }
 
 private:
-    const std::string path;
+    void check_data();
+    static server_configuration load_data_from_json(std::string file_path);
+    server_configuration data;
 };

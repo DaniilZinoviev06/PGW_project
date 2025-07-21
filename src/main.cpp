@@ -1,9 +1,6 @@
-#include <boost/asio/ip/address.hpp>
 #include <iostream>
-#include "../include/pdn_connection.h"
-#include "../include/control_plane.h"
-#include "../include/data_plane.h"
 #include "../include/server_data.h"
+#include "../include/udp_server.h"
 
 using std::cerr;
 using std::endl;
@@ -11,20 +8,18 @@ using std::cout;
 
 int main() {
     try {
-        server_configuration config = ServerConf::load_data_from_json("../pgw_server.json");
+        ServerConf conf("../pgw_server.json");
 
-        std::cout << config.udp_ip << "\n"
-            << config.udp_port << "\n"
-            << config.http_port << "\n"
-            << config.session_timeout_sec << "\n"
-            << config.cdr_log << "\n"
-            << config.log_level << "\n"
-            << config.imsi_blacklist.size() << "\n";
+        const auto& config = conf.get_conf();
+
+        UDPServer server(config);
+        std::cout << "Сервер запущен " << config.udp_ip << ":" << config.udp_port << "\n";
+
+        server.launch();
 
     } catch (const std::exception& e) {
-        std::cerr << "Ошибка: " << e.what() << std::endl;
+        std::cerr << e.what() << "\n";
         return 1;
     }
-
     return 0;
 }
