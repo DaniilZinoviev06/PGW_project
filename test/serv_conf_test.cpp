@@ -42,7 +42,8 @@ protected:
 
 // тест на загрузку конфига
 TEST_F(Server_conf_test, loads_valid_config) {
-    auto config = ServerConf::load_data_from_json(test_config_path);
+    ServerConf conf(test_config_path);
+    auto config = conf.get_conf();
 
     EXPECT_EQ(config.udp_ip.to_string(), "127.0.0.1");
     EXPECT_EQ(config.udp_port, 49155);
@@ -55,10 +56,10 @@ TEST_F(Server_conf_test, loads_valid_config) {
     EXPECT_EQ(config.imsi_blacklist.size(), 2);
 }
 
-// тест на отсутсвующий файл
+// тест на отсутствующий файл
 TEST_F(Server_conf_test, throwsonmissingfile) {
     EXPECT_THROW(
-        ServerConf::load_data_from_json("non_existent.json"),
+        ServerConf("non_existent.json"),
         std::runtime_error
     );
 }
@@ -70,7 +71,7 @@ TEST_F(Server_conf_test, throws_on_invalid_JSON) {
     out.close();
 
     EXPECT_THROW(
-        ServerConf::load_data_from_json("bad_config.json"),
+        ServerConf("bad_config.json"),
         std::runtime_error
     );
 
@@ -84,7 +85,7 @@ TEST_F(Server_conf_test, throws_on_invalid_IP) {
     out.close();
 
     EXPECT_THROW(
-        ServerConf::load_data_from_json("wrong.json"),
+        ServerConf("wrong.json"),
         std::runtime_error
     );
 
@@ -94,10 +95,11 @@ TEST_F(Server_conf_test, throws_on_invalid_IP) {
 // тест валидации данных
 TEST_F(Server_conf_test, check_data_validate) {
     ServerConf conf(test_config_path);
-    auto config = conf.load_data_from_json(test_config_path);
+    auto config = conf.get_conf();
 
     EXPECT_NO_THROW(conf.check_data(config));
 
-    config.udp_port = 0;
-    EXPECT_THROW(conf.check_data(config), std::runtime_error);
+    auto bad_config = config;
+    bad_config.udp_port = 0;
+    EXPECT_THROW(conf.check_data(bad_config), std::runtime_error);
 }
