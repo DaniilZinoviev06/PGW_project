@@ -31,6 +31,15 @@ std::shared_ptr<pdn_connection> control_plane::find_pdn_by_ip_address(const boos
     return search->second;
 }
 
+bool control_plane::has_active_session(const std::string& imsi) const {
+    for (const auto& [ip, pdn] : _pdns_by_ue_ip_addr) {
+        if (pdn->get_imsi() == imsi) {
+            return true;
+        }
+    }
+    return false;
+}
+
 std::shared_ptr<bearer> control_plane::find_bearer_by_dp_teid(uint32_t dp_teid) const {
     const auto search = _bearers.find(dp_teid);
 
@@ -58,15 +67,11 @@ void control_plane::add_apn(std::string apn_name, boost::asio::ip::address_v4 ap
         throw std::runtime_error("apn существует");
 }
 
-// создание pdn подключения
-// генерация случайного ip
-// поиск в мапе apn`а
-// дальше через метод create взаимод. с конструктором и
-// создание pdn connection
-// после pdn добавляется в мапы
-std::shared_ptr<pdn_connection> control_plane::create_pdn_connection(const std::string &apn,
-    boost::asio::ip::address_v4 sgw_addr, uint32_t sgw_cp_teid) {
-
+std::shared_ptr<pdn_connection> control_plane::create_pdn_connection(
+    const std::string& apn,
+    boost::asio::ip::address_v4 sgw_addr,
+    uint32_t sgw_cp_teid)
+{
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_int_distribution<> dist(0, 255);
@@ -76,11 +81,14 @@ std::shared_ptr<pdn_connection> control_plane::create_pdn_connection(const std::
 
     auto apn_search = _apns.find(apn);
     if (apn_search == _apns.end()) {
-        cout << "apn не найден " << apn << endl;
-        return nullptr;
+        throw std::runtime_error("APN не найден");
     }
 
-    std::shared_ptr<pdn_connection> connection_pdn = pdn_connection::create(sgw_cp_teid, apn_search->second, ue_ip);
+    auto connection_pdn = pdn_connection::create(sgw_cp_teid, apn_search->second, ue_ip);
+    if (!connection_pdn) {
+        throw std::runtime_error("Не удалось создать PDNconnection");
+    }
+
     connection_pdn->set_sgw_addr(sgw_addr);
 
     _pdns[sgw_cp_teid] = connection_pdn;

@@ -24,6 +24,9 @@ public:
     [[nodiscard]] boost::asio::ip::address_v4 get_apn_gw() const;
     [[nodiscard]] boost::asio::ip::address_v4 get_ue_ip_addr() const;
 
+    const std::string& get_imsi() const { return imsi_pdn; }
+    void set_imsi(const std::string& imsi) { imsi_pdn = imsi; }
+
 private:
     friend control_plane;
 
@@ -32,6 +35,7 @@ private:
     void add_bearer(std::shared_ptr<bearer> bearer);
     void remove_bearer(uint32_t dp_teid);
 
+    std::string imsi_pdn;
     boost::asio::ip::address_v4 _apn_gateway;
     boost::asio::ip::address_v4 _ue_ip_addr;
     uint32_t _cp_teid{};

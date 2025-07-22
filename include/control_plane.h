@@ -23,6 +23,8 @@ public:
 
     void delete_bearer(uint32_t dp_teid);
 
+    bool has_active_session(const std::string& imsi) const;
+
     void add_apn(std::string apn_name, boost::asio::ip::address_v4 apn_gateway);
 
     void reset_all_limits();

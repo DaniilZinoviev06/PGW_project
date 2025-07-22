@@ -27,10 +27,8 @@ public:
         std::lock_guard<std::mutex> lock(log_mutex);
         std::ofstream file(cdr_file_path, std::ios::app);
         if (file.is_open()) {
-            auto now = std::chrono::system_clock::now();
-            auto in_time_t = std::chrono::system_clock::to_time_t(now);
-            file << std::put_time(std::localtime(&in_time_t), "%Y-%m-%d %H:%M:%S")
-                 << "," << imsi << "," << action << "\n";
+            auto in_time_t = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+            file << std::put_time(std::localtime(&in_time_t), "%H:%M:%S %Y-%m-%d") << "," << imsi << "," << action << "\n";
         }
     }
 

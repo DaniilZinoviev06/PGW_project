@@ -12,9 +12,16 @@ list(REMOVE_ITEM SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp")
 
 add_library(${OBJ_LIB} OBJECT ${SOURCES})
 
+target_include_directories(${OBJ_LIB} PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${cpp-httplib_SOURCE_DIR}
+        ${easyloggingpp_SOURCE_DIR}/src
+)
+
 target_include_directories(${OBJ_LIB} SYSTEM PUBLIC
         ${boost_asio_SOURCE_DIR}/include
         ${nlohmann_json_INCLUDE_DIRS}
+        ${cpp-httplib_SOURCE_DIR}/include
 )
 
 target_include_directories(${OBJ_LIB} PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>")
@@ -29,4 +36,5 @@ add_executable(${RUNNABLE} "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp")
 target_link_libraries(${RUNNABLE}
         ${OBJ_LIB}
         ${Boost_SYSTEM_LIBRARY}
+        # cpp-httplib
 )
