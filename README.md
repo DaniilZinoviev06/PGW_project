@@ -34,6 +34,19 @@ client/pgw_client - клиент
 test/simple_pgw_tests - тесты
 ```
 
+Пример сценария
+
+Запускаем сервер:
+```
+./simple_pgw
+```
+
+Запускаем клиент:
+```
+./pgw_client "001010000562401"
+curl "http://localhost:49156/check_subscriber?imsi=000134235345453"
+```
+
 <h2 id="settings">:scroll: Конфигурация</h2>
 <p>Конфигурация осуществляется при помощи 2 JSON файлов</p>
 <br>
