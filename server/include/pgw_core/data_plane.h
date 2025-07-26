@@ -1,6 +1,6 @@
 #pragma once
 
-#include <../include/control_plane.h>
+#include <pgw_core/control_plane.h>
 
 #include <boost/asio/ip/address.hpp>
 

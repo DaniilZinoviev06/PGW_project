@@ -1,5 +1,5 @@
-#include <../include/bearer.h>
-#include <../include/pdn_connection.h>
+#include <sessions/bearer.h>
+#include <network_interaction/pdn_connection.h>
 
 bearer::bearer(uint32_t dp_teid, pdn_connection &pdn) : _dp_teid(dp_teid), _pdn(pdn) {}
 
