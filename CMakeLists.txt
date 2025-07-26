@@ -34,5 +34,17 @@ configure_file(
         COPYONLY
 )
 
+<<<<<<< Updated upstream
 add_subdirectory(src)
 add_subdirectory(test)
+=======
+configure_file(
+        "${CMAKE_SOURCE_DIR}/configuration/pgw_client.json"
+        "${CMAKE_BINARY_DIR}/pgw_client.json"
+        COPYONLY
+)
+
+add_subdirectory(server)
+add_subdirectory(test)
+add_subdirectory(client)
+>>>>>>> Stashed changes

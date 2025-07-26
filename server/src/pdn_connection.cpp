@@ -1,4 +1,4 @@
-#include <../include/pdn_connection.h>
+#include <network_interaction/pdn_connection.h>
 
 std::shared_ptr<pdn_connection> pdn_connection::create(uint32_t cp_teid, boost::asio::ip::address_v4 apn_gw,
                                                        boost::asio::ip::address_v4 ue_ip_addr) {
