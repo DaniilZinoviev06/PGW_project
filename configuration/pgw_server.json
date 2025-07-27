@@ -6,7 +6,7 @@
   "http_port": 49156,
   "graceful_shutdown_rate": 10,
   "log_file": "../../../logs/pgw.log",
-  "log_level": "ERROR",
+  "log_level": "DEBUG",
   "blacklist": [
     "001010123456789",
     "001010000000001",
