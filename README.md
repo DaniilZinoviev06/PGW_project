@@ -1,6 +1,12 @@
  # !
  <p>Теперь во время выполнения программы можно менять уровень логирования, для этого во время выполнения просто вносить изменения в файл build/pgw_server.json</p>
 
+ HTTP API
+ ```
+curl "http://localhost:49156/api/v1/check_imsi?imsi=001010123456789"
+curl "http://localhost:49156/api/v1/stop"
+```
+
 <hr><div align="center">
   <a href="#about">О проекте</a>&ensp;&ensp;&ensp;
   <a href="#installation">Установка</a>&ensp;&ensp;&ensp;
