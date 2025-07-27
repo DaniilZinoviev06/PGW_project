@@ -1,0 +1,580 @@
+[2025-07-27 11:25:22.231] [info] Уровень: DEBUG, Файл: ../../../logs/pgw.log
+[2025-07-27 11:25:22.231] [debug] Конфигурация мониторится
+[2025-07-27 11:25:59.861] [debug] Логгер обновлен
+[2025-07-27 11:27:42.529] [info] Уровень: DEBUG, Файл: ../../../logs/pgw.log
+[2025-07-27 11:27:42.529] [debug] Конфигурация мониторится
+[2025-07-27 11:28:39.880] [info] Уровень: DEBUG, Файл: ../../../logs/pgw.log
+[2025-07-27 11:28:39.880] [debug] Конфигурация мониторится
+[2025-07-27 11:31:28.026] [info] Уровень: DEBUG
+[2025-07-27 11:31:28.026] [debug] Конфигурация мониторится
+[2025-07-27 11:36:32.693] [info] Уровень: DEBUG
+[2025-07-27 11:36:32.693] [debug] Конфигурация мониторится
+[2025-07-27 11:36:51.011] [info] Логгер перешел в другой режим
+[2025-07-27 14:35:25.946] [info] Уровень: INFO
+[2025-07-27 14:35:25.954] [info] Starting PGW services
+[2025-07-27 14:54:28.084] [info] Уровень: INFO
+[2025-07-27 14:54:28.084] [info] Starting PGW services
+[2025-07-27 14:54:28.085] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 14:54:56.731] [error] PDN creation failed: APN default not found
+[2025-07-27 14:57:30.988] [info] Уровень: INFO
+[2025-07-27 14:57:30.988] [info] Starting PGW services
+[2025-07-27 14:57:30.988] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:12:49.661] [info] Уровень: DEBUG
+[2025-07-27 15:12:49.661] [info] Starting PGW services
+[2025-07-27 15:12:49.662] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:13:46.679] [info] Уровень: DEBUG
+[2025-07-27 15:13:46.679] [info] Starting PGW services
+[2025-07-27 15:13:46.679] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:20:51.002] [info] Уровень: DEBUG
+[2025-07-27 15:20:51.011] [info] Starting PGW services
+[2025-07-27 15:20:51.011] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:21:07.344] [debug] Processing IMSI: 000101005026041
+[2025-07-27 15:21:47.440] [debug] Processing IMSI: 000101005026041
+[2025-07-27 15:26:39.485] [info] Уровень: DEBUG
+[2025-07-27 15:26:39.493] [info] Starting PGW services
+[2025-07-27 15:26:39.494] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:26:42.669] [debug] Processing IMSI: 000101005026041
+[2025-07-27 15:33:27.108] [info] Уровень: DEBUG
+[2025-07-27 15:33:27.108] [info] Starting PGW services
+[2025-07-27 15:33:27.108] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:33:29.296] [debug] Processing IMSI: 001010000562401
+[2025-07-27 15:33:29.296] [info] IMSI 001010000562401 rejected (blacklisted)
+[2025-07-27 15:33:32.316] [debug] Processing IMSI: 001010000562404
+[2025-07-27 15:39:13.867] [info] Уровень: DEBUG
+[2025-07-27 15:39:13.867] [info] Starting PGW services
+[2025-07-27 15:39:13.867] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:39:17.028] [debug] Processing IMSI: 001010000562404
+[2025-07-27 15:39:32.021] [debug] Processing IMSI: 001010000562404
+[2025-07-27 15:44:09.458] [info] Уровень: DEBUG
+[2025-07-27 15:44:09.458] [debug] Setting up config file monitoring for: ../../pgw_server.json
+[2025-07-27 15:44:09.459] [info] Config file monitoring initialized successfully
+[2025-07-27 15:44:09.459] [info] Starting PGW services
+[2025-07-27 15:44:09.459] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:44:17.083] [debug] Processing IMSI: 001010000562404
+[2025-07-27 15:44:37.869] [debug] Processing IMSI: 001010000562404
+[2025-07-27 15:49:42.590] [info] Уровень: DEBUG
+[2025-07-27 15:49:42.597] [debug] Setting up config file monitoring for: ../../pgw_server.json
+[2025-07-27 15:49:42.597] [info] Config file monitoring initialized successfully
+[2025-07-27 15:49:42.597] [info] Starting PGW services
+[2025-07-27 15:49:42.598] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:50:03.511] [debug] Processing IMSI: 001010000562404
+[2025-07-27 15:50:08.026] [debug] Processing IMSI: 001010000562404
+[2025-07-27 15:54:49.440] [info] Уровень: DEBUG
+[2025-07-27 15:54:49.440] [debug] Setting up config file monitoring for: ../../pgw_server.json
+[2025-07-27 15:54:49.448] [info] Config file monitoring initialized successfully
+[2025-07-27 15:54:49.449] [info] Starting PGW services
+[2025-07-27 15:54:49.449] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:56:19.935] [info] Уровень: DEBUG
+[2025-07-27 15:56:19.935] [debug] Setting up config file monitoring for: ../../pgw_server.json
+[2025-07-27 15:56:19.935] [info] Config file monitoring initialized successfully
+[2025-07-27 15:56:19.935] [info] Starting PGW services
+[2025-07-27 15:56:19.935] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 15:56:23.937] [debug] Processing IMSI: 001010000562404
+[2025-07-27 15:56:39.153] [debug] Processing IMSI: 001010000562404
+[2025-07-27 16:08:14.227] [info] Уровень: INFO
+[2025-07-27 16:08:14.227] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 16:08:14.227] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 16:08:14.227] [info] Starting PGW services
+[2025-07-27 16:08:14.228] [info] Мониторинг конфигурации запущен
+[2025-07-27 16:08:14.228] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 16:08:39.070] [info] IMSI 001010000562401 rejected (blacklisted)
+[2025-07-27 16:08:50.651] [info] Конфигурационный файл изменён!
+[2025-07-27 16:08:50.651] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 16:08:50.651] [info] Уровень логирования изменён на: DEBUG
+[2025-07-27 16:08:50.651] [info] Конфигурация успешно перезагружена
+[2025-07-27 16:08:54.130] [debug] Processing IMSI: 001010000562401
+[2025-07-27 16:08:54.130] [info] IMSI 001010000562401 rejected (blacklisted)
+[2025-07-27 18:25:28.626] [info] Уровень: DEBUG
+[2025-07-27 18:25:28.635] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 18:25:28.635] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 18:25:28.635] [info] Starting PGW services
+[2025-07-27 18:25:28.635] [debug] Запуск мониторинга конфигурации
+[2025-07-27 18:25:28.636] [info] Мониторинг конфигурации запущен
+[2025-07-27 18:40:39.070] [info] Уровень: DEBUG
+[2025-07-27 18:40:39.070] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 18:40:39.070] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 18:40:39.070] [info] Starting PGW services
+[2025-07-27 18:40:39.070] [debug] Запуск мониторинга конфигурации
+[2025-07-27 18:40:39.070] [info] Мониторинг конфигурации запущен
+[2025-07-27 19:00:59.140] [info] Уровень: DEBUG
+[2025-07-27 19:00:59.141] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 19:00:59.141] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 19:00:59.141] [info] Starting PGW services
+[2025-07-27 19:00:59.141] [debug] Запуск мониторинга конфигурации
+[2025-07-27 19:00:59.141] [info] Мониторинг конфигурации запущен
+[2025-07-27 19:00:59.141] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 19:01:05.213] [debug] Processing IMSI: 001010079786501
+[2025-07-27 19:01:05.213] [info] IMSI 001010079786501 rejected (blacklisted)
+[2025-07-27 19:01:14.714] [debug] Processing IMSI: 001010079786500
+[2025-07-27 19:01:30.756] [info] Конфигурационный файл изменён!
+[2025-07-27 19:01:30.756] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 19:01:30.756] [info] Уровень логирования изменён на: INFO
+[2025-07-27 19:01:30.756] [info] Конфигурация успешно перезагружена
+[2025-07-27 19:01:50.598] [info] Конфигурационный файл изменён!
+[2025-07-27 19:01:50.598] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 19:01:50.598] [info] Уровень логирования изменён на: DEBUG
+[2025-07-27 19:01:50.598] [info] Конфигурация успешно перезагружена
+[2025-07-27 19:01:53.564] [debug] Processing IMSI: 001010079786500
+[2025-07-27 19:05:21.785] [debug] Processing IMSI: 001010079786500
+[2025-07-27 19:05:55.427] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 19:05:55.431] [info] Мониторинг конфигурации остановлен
+[2025-07-27 19:05:55.431] [info] Graceful shutdown completed in 0 seconds
+[2025-07-27 19:05:55.431] [info] All PGW services started successfully
+[2025-07-27 19:05:55.481] [info] UDP server stopped
+[2025-07-27 19:16:40.514] [info] PGW successfully shut down
+[2025-07-27 19:17:15.011] [info] Уровень: DEBUG
+[2025-07-27 19:17:15.011] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 19:17:15.011] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 19:17:15.011] [info] Starting PGW services
+[2025-07-27 19:17:15.011] [debug] Запуск мониторинга конфигурации
+[2025-07-27 19:17:15.011] [info] Мониторинг конфигурации запущен
+[2025-07-27 19:17:15.011] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 19:17:23.084] [debug] Processing IMSI: 001010079786500
+[2025-07-27 19:17:47.027] [debug] Processing IMSI: 001010079786501
+[2025-07-27 19:17:47.028] [info] IMSI 001010079786501 rejected (blacklisted)
+[2025-07-27 19:17:48.519] [debug] Processing IMSI: 001010079786502
+[2025-07-27 19:17:50.386] [debug] Processing IMSI: 001010079786503
+[2025-07-27 19:17:51.832] [debug] Processing IMSI: 001010079786504
+[2025-07-27 19:17:53.051] [debug] Processing IMSI: 001010079786505
+[2025-07-27 19:17:54.630] [debug] Processing IMSI: 001010079786506
+[2025-07-27 19:17:56.095] [debug] Processing IMSI: 001010079786507
+[2025-07-27 19:17:58.430] [debug] Processing IMSI: 001010079786507
+[2025-07-27 19:18:00.149] [debug] Processing IMSI: 001010079786508
+[2025-07-27 19:18:02.900] [debug] Processing IMSI: 001010079786509
+[2025-07-27 19:18:14.081] [info] Конфигурационный файл изменён!
+[2025-07-27 19:18:14.081] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 19:18:14.081] [error] Ошибка перезагрузки конфигурации: Некорректный уровень логирования
+[2025-07-27 19:18:25.343] [info] Конфигурационный файл изменён!
+[2025-07-27 19:18:25.343] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 19:18:25.343] [info] Конфигурация успешно перезагружена
+[2025-07-27 19:18:57.141] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 19:18:57.141] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [debug] Session removed for connection
+[2025-07-27 19:18:57.142] [info] Shutdown progress: 100.0% (10 of 10)
+[2025-07-27 19:18:57.226] [info] UDP server stopped
+[2025-07-27 19:18:58.145] [info] Мониторинг конфигурации остановлен
+[2025-07-27 19:18:58.145] [info] Graceful shutdown completed in 1 seconds
+[2025-07-27 19:18:58.145] [info] All PGW services started successfully
+[2025-07-27 19:19:22.150] [info] PGW successfully shut down
+[2025-07-27 19:26:10.361] [info] Уровень: DEBUG
+[2025-07-27 19:26:10.361] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 19:26:10.361] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 19:26:10.361] [info] Starting PGW services
+[2025-07-27 19:26:10.361] [debug] Запуск мониторинга конфигурации
+[2025-07-27 19:26:10.362] [info] Мониторинг конфигурации запущен
+[2025-07-27 19:26:10.362] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 19:26:10.362] [info] All PGW services started successfully
+[2025-07-27 19:26:19.832] [debug] Processing IMSI: 001010079786509
+[2025-07-27 19:26:44.216] [info] Конфигурационный файл изменён!
+[2025-07-27 19:26:44.216] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 19:26:44.216] [info] Уровень логирования изменён на: INFO
+[2025-07-27 19:26:44.216] [info] Конфигурация успешно перезагружена
+[2025-07-27 19:26:50.370] [info] Session expired for IMSI: 001010079786509
+[2025-07-27 19:27:01.050] [info] Конфигурационный файл изменён!
+[2025-07-27 19:27:01.050] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 19:27:01.050] [info] Уровень логирования изменён на: DEBUG
+[2025-07-27 19:27:01.050] [info] Конфигурация успешно перезагружена
+[2025-07-27 19:27:32.367] [debug] Processing IMSI: 001010079786509
+[2025-07-27 19:27:36.492] [debug] Processing IMSI: 001010079786510
+[2025-07-27 19:27:37.917] [debug] Processing IMSI: 001010079786510
+[2025-07-27 19:27:39.747] [debug] Processing IMSI: 001010079786519
+[2025-07-27 19:27:41.061] [debug] Processing IMSI: 001010079786518
+[2025-07-27 19:27:42.640] [debug] Processing IMSI: 001010079786517
+[2025-07-27 19:27:43.974] [debug] Processing IMSI: 001010079786516
+[2025-07-27 19:27:45.444] [debug] Processing IMSI: 001010079786514
+[2025-07-27 19:27:46.993] [debug] Processing IMSI: 001010079786514
+[2025-07-27 19:27:49.262] [debug] Processing IMSI: 001010079786517
+[2025-07-27 19:27:52.427] [debug] Processing IMSI: 001010079786517
+[2025-07-27 19:27:57.613] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 19:28:02.385] [debug] Session removed for connection
+[2025-07-27 19:28:02.385] [info] Session expired for IMSI: 001010079786509
+[2025-07-27 19:28:07.386] [debug] Session removed for connection
+[2025-07-27 19:28:07.386] [info] Session expired for IMSI: 001010079786510
+[2025-07-27 19:28:08.387] [debug] Session removed for connection
+[2025-07-27 19:28:08.387] [info] Session expired for IMSI: 001010079786510
+[2025-07-27 19:28:10.387] [debug] Session removed for connection
+[2025-07-27 19:28:10.387] [info] Session expired for IMSI: 001010079786519
+[2025-07-27 19:28:11.387] [debug] Session removed for connection
+[2025-07-27 19:28:11.387] [info] Session expired for IMSI: 001010079786518
+[2025-07-27 19:28:13.388] [debug] Session removed for connection
+[2025-07-27 19:28:13.388] [info] Session expired for IMSI: 001010079786517
+[2025-07-27 19:28:14.388] [debug] Session removed for connection
+[2025-07-27 19:28:14.388] [info] Session expired for IMSI: 001010079786516
+[2025-07-27 19:28:16.389] [debug] Session removed for connection
+[2025-07-27 19:28:16.389] [info] Session expired for IMSI: 001010079786514
+[2025-07-27 19:28:17.389] [debug] Session removed for connection
+[2025-07-27 19:28:17.389] [info] Session expired for IMSI: 001010079786514
+[2025-07-27 19:28:19.389] [debug] Session removed for connection
+[2025-07-27 19:28:19.390] [info] Session expired for IMSI: 001010079786517
+[2025-07-27 19:28:23.391] [debug] Session removed for connection
+[2025-07-27 19:28:23.391] [info] Session expired for IMSI: 001010079786517
+[2025-07-27 19:28:25.740] [debug] Processing IMSI: 001010079786517
+[2025-07-27 19:28:41.489] [info] UDP server stopped
+[2025-07-27 19:28:54.548] [info] Уровень: DEBUG
+[2025-07-27 19:28:54.548] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 19:28:54.548] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 19:28:54.548] [info] Starting PGW services
+[2025-07-27 19:28:54.548] [debug] Запуск мониторинга конфигурации
+[2025-07-27 19:28:54.548] [info] Мониторинг конфигурации запущен
+[2025-07-27 19:28:54.548] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 19:28:54.548] [info] All PGW services started successfully
+[2025-07-27 19:29:00.615] [debug] Processing IMSI: 001010079786517
+[2025-07-27 19:29:21.092] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 19:29:31.557] [debug] Session removed for connection
+[2025-07-27 19:29:31.557] [info] Session expired for IMSI: 001010079786517
+[2025-07-27 19:30:04.608] [info] UDP server stopped
+[2025-07-27 19:41:03.293] [info] Уровень: DEBUG
+[2025-07-27 19:41:03.301] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 19:41:03.301] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 19:41:03.301] [info] Starting PGW services
+[2025-07-27 19:41:03.301] [debug] Запуск мониторинга конфигурации
+[2025-07-27 19:41:03.301] [info] Мониторинг конфигурации запущен
+[2025-07-27 19:41:03.301] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 19:41:03.301] [info] All PGW services started successfully
+[2025-07-27 19:41:11.828] [debug] Processing IMSI: 001010079786517
+[2025-07-27 19:41:16.480] [debug] Processing IMSI: 001010079786518
+[2025-07-27 19:41:18.417] [debug] Processing IMSI: 001010079786519
+[2025-07-27 19:41:42.311] [debug] Session removed for connection
+[2025-07-27 19:41:42.311] [info] Session expired for IMSI: 001010079786517
+[2025-07-27 19:41:47.312] [debug] Session removed for connection
+[2025-07-27 19:41:47.312] [info] Session expired for IMSI: 001010079786518
+[2025-07-27 19:41:49.313] [debug] Session removed for connection
+[2025-07-27 19:41:49.313] [info] Session expired for IMSI: 001010079786519
+[2025-07-27 19:42:49.069] [debug] Processing IMSI: 001010079786519
+[2025-07-27 19:42:51.006] [debug] Processing IMSI: 001010079786517
+[2025-07-27 19:42:52.385] [debug] Processing IMSI: 001010079786516
+[2025-07-27 19:42:56.951] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 19:43:19.328] [debug] Session removed for connection
+[2025-07-27 19:43:19.328] [info] Session expired for IMSI: 001010079786519
+[2025-07-27 19:43:21.329] [debug] Session removed for connection
+[2025-07-27 19:43:21.329] [info] Session expired for IMSI: 001010079786517
+[2025-07-27 19:43:23.330] [debug] Session removed for connection
+[2025-07-27 19:43:23.330] [info] Session expired for IMSI: 001010079786516
+[2025-07-27 19:44:21.350] [info] UDP server stopped
+[2025-07-27 19:44:30.079] [info] Уровень: DEBUG
+[2025-07-27 19:44:30.079] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 19:44:30.079] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 19:44:30.079] [info] Starting PGW services
+[2025-07-27 19:44:30.079] [debug] Запуск мониторинга конфигурации
+[2025-07-27 19:44:30.079] [info] Мониторинг конфигурации запущен
+[2025-07-27 19:44:30.079] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 19:44:30.079] [info] All PGW services started successfully
+[2025-07-27 19:44:32.746] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 19:46:06.181] [info] UDP server stopped
+[2025-07-27 20:12:05.672] [info] Уровень: DEBUG
+[2025-07-27 20:12:05.680] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:12:05.680] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:12:05.680] [info] Starting PGW services
+[2025-07-27 20:12:05.680] [debug] Запуск мониторинга конфигурации
+[2025-07-27 20:12:05.680] [info] Мониторинг конфигурации запущен
+[2025-07-27 20:12:05.680] [info] All PGW services started successfully
+[2025-07-27 20:12:05.681] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 20:12:10.528] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:12:40.687] [debug] Session removed for connection
+[2025-07-27 20:12:40.687] [info] Session expired for IMSI: 001010079786516
+[2025-07-27 20:25:15.818] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 20:25:15.827] [info] Мониторинг конфигурации остановлен
+[2025-07-27 20:25:15.827] [info] Graceful shutdown completed in 0 seconds
+[2025-07-27 20:26:50.071] [info] Уровень: DEBUG
+[2025-07-27 20:26:50.072] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:26:50.072] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:26:50.072] [info] Starting PGW services
+[2025-07-27 20:26:50.072] [debug] Запуск мониторинга конфигурации
+[2025-07-27 20:26:50.072] [info] Мониторинг конфигурации запущен
+[2025-07-27 20:26:50.072] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 20:26:50.072] [info] All PGW services started successfully
+[2025-07-27 20:26:53.329] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:26:55.765] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 20:27:24.078] [debug] Session removed for connection
+[2025-07-27 20:27:24.078] [info] Session expired for IMSI: 001010079786516
+[2025-07-27 20:27:53.356] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:27:59.683] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:28:11.128] [info] UDP server stopped
+[2025-07-27 20:36:42.896] [info] Уровень: DEBUG
+[2025-07-27 20:36:42.897] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:36:42.897] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:36:42.897] [critical] Fatal error: Bind failed: Address already in use
+[2025-07-27 20:37:18.837] [info] Уровень: DEBUG
+[2025-07-27 20:37:18.837] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:37:18.837] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:37:18.837] [info] Starting PGW services
+[2025-07-27 20:37:18.837] [debug] Запуск мониторинга конфигурации
+[2025-07-27 20:37:18.837] [info] Мониторинг конфигурации запущен
+[2025-07-27 20:37:18.837] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 20:37:18.837] [info] All PGW services started successfully
+[2025-07-27 20:37:24.663] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:37:26.432] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:37:27.097] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:37:40.600] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 20:37:40.600] [info] Stopping HTTP API
+[2025-07-27 20:37:54.846] [debug] Session removed for connection
+[2025-07-27 20:37:54.847] [info] Session expired for IMSI: 001010079786516
+[2025-07-27 20:37:56.848] [debug] Session removed for connection
+[2025-07-27 20:37:56.848] [info] Session expired for IMSI: 001010079786516
+[2025-07-27 20:37:57.848] [debug] Session removed for connection
+[2025-07-27 20:37:57.848] [info] Session expired for IMSI: 001010079786516
+[2025-07-27 20:40:52.892] [info] UDP server stopped
+[2025-07-27 20:42:25.837] [info] Уровень: DEBUG
+[2025-07-27 20:42:25.837] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:42:25.837] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:42:25.837] [info] Starting PGW services
+[2025-07-27 20:42:25.837] [debug] Запуск мониторинга конфигурации
+[2025-07-27 20:42:25.837] [info] Мониторинг конфигурации запущен
+[2025-07-27 20:42:25.837] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 20:42:25.837] [info] All PGW services started successfully
+[2025-07-27 20:42:29.814] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:42:31.027] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:42:32.583] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 20:42:32.583] [info] Stopping UDP server
+[2025-07-27 20:42:32.584] [info] UDP server stopped
+[2025-07-27 20:42:32.584] [info] Stopping monitoring
+[2025-07-27 20:42:32.588] [info] Мониторинг конфигурации остановлен
+[2025-07-27 20:42:32.588] [info] Stopping HTTP API
+[2025-07-27 20:52:33.252] [info] Уровень: DEBUG
+[2025-07-27 20:52:33.252] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:52:33.252] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:52:33.252] [info] Starting PGW services
+[2025-07-27 20:52:33.252] [debug] Запуск мониторинга конфигурации
+[2025-07-27 20:52:33.252] [info] Мониторинг конфигурации запущен
+[2025-07-27 20:52:33.252] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 20:52:33.252] [info] All PGW services started successfully
+[2025-07-27 20:52:55.692] [debug] Processing IMSI: 001010079786516
+[2025-07-27 20:52:57.938] [debug] Processing IMSI: 001010079786513
+[2025-07-27 20:53:26.260] [debug] Session removed for connection
+[2025-07-27 20:53:26.260] [info] Session expired for IMSI: 001010079786516
+[2025-07-27 20:53:28.261] [debug] Session removed for connection
+[2025-07-27 20:53:28.261] [info] Session expired for IMSI: 001010079786513
+[2025-07-27 20:53:58.664] [debug] Processing IMSI: 001010123456789
+[2025-07-27 20:53:58.664] [info] IMSI 001010123456789 rejected (blacklisted)
+[2025-07-27 20:54:06.831] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 20:54:06.831] [info] Stopping HTTP API
+[2025-07-27 20:54:06.831] [info] Stopping UDP server
+[2025-07-27 20:54:06.831] [info] UDP server stopped
+[2025-07-27 20:54:06.831] [info] Stopping monitoring
+[2025-07-27 20:54:06.836] [info] Мониторинг конфигурации остановлен
+[2025-07-27 20:54:06.836] [info] Total sessions to close: 0
+[2025-07-27 20:54:06.836] [info] Application shutdown completed in 0 ms
+[2025-07-27 20:54:21.173] [info] Уровень: DEBUG
+[2025-07-27 20:54:21.173] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:54:21.173] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:54:21.173] [info] Starting PGW services
+[2025-07-27 20:54:21.173] [debug] Запуск мониторинга конфигурации
+[2025-07-27 20:54:21.173] [info] Мониторинг конфигурации запущен
+[2025-07-27 20:54:21.174] [info] All PGW services started successfully
+[2025-07-27 20:54:21.174] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 20:54:24.277] [debug] Processing IMSI: 001010123456789
+[2025-07-27 20:54:24.277] [info] IMSI 001010123456789 rejected (blacklisted)
+[2025-07-27 20:54:25.606] [debug] Processing IMSI: 001010123456782
+[2025-07-27 20:54:26.783] [debug] Processing IMSI: 001010123456783
+[2025-07-27 20:54:28.371] [debug] Processing IMSI: 001010123456783
+[2025-07-27 20:54:30.362] [debug] Processing IMSI: 001010123456785
+[2025-07-27 20:54:31.817] [debug] Processing IMSI: 001010123456765
+[2025-07-27 20:54:33.844] [debug] Processing IMSI: 001010123456765
+[2025-07-27 20:54:35.360] [debug] Processing IMSI: 001010123466765
+[2025-07-27 20:54:37.659] [debug] Processing IMSI: 001010123756765
+[2025-07-27 20:54:39.508] [debug] Processing IMSI: 001010123756765
+[2025-07-27 20:54:42.463] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 20:54:42.463] [info] Stopping HTTP API
+[2025-07-27 20:54:42.463] [info] Stopping UDP server
+[2025-07-27 20:54:42.463] [info] UDP server stopped
+[2025-07-27 20:54:42.463] [info] Stopping monitoring
+[2025-07-27 20:54:42.468] [info] Мониторинг конфигурации остановлен
+[2025-07-27 20:54:42.468] [info] Total sessions to close: 9
+[2025-07-27 20:54:42.468] [debug] Session removed for connection
+[2025-07-27 20:54:42.468] [debug] Closed session for IMSI: 001010123456782
+[2025-07-27 20:54:42.468] [debug] Session removed for connection
+[2025-07-27 20:54:42.468] [debug] Closed session for IMSI: 001010123456783
+[2025-07-27 20:54:42.468] [debug] Session removed for connection
+[2025-07-27 20:54:42.468] [debug] Closed session for IMSI: 001010123456783
+[2025-07-27 20:54:42.468] [debug] Session removed for connection
+[2025-07-27 20:54:42.468] [debug] Closed session for IMSI: 001010123456785
+[2025-07-27 20:54:42.468] [debug] Session removed for connection
+[2025-07-27 20:54:42.468] [debug] Closed session for IMSI: 001010123456765
+[2025-07-27 20:54:42.468] [debug] Session removed for connection
+[2025-07-27 20:54:42.468] [debug] Closed session for IMSI: 001010123456765
+[2025-07-27 20:54:42.468] [debug] Session removed for connection
+[2025-07-27 20:54:42.468] [debug] Closed session for IMSI: 001010123466765
+[2025-07-27 20:54:42.468] [debug] Session removed for connection
+[2025-07-27 20:54:42.468] [debug] Closed session for IMSI: 001010123756765
+[2025-07-27 20:54:42.468] [debug] Session removed for connection
+[2025-07-27 20:54:42.468] [debug] Closed session for IMSI: 001010123756765
+[2025-07-27 20:54:42.468] [info] Progress: 100.0% (9 of 9)
+[2025-07-27 20:54:43.468] [info] Application shutdown completed in 1000 ms
+[2025-07-27 20:54:51.717] [info] Уровень: DEBUG
+[2025-07-27 20:54:51.717] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:54:51.717] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:54:51.717] [info] Starting PGW services
+[2025-07-27 20:54:51.717] [debug] Запуск мониторинга конфигурации
+[2025-07-27 20:54:51.718] [info] Мониторинг конфигурации запущен
+[2025-07-27 20:54:51.718] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 20:54:51.718] [info] All PGW services started successfully
+[2025-07-27 20:55:00.728] [info] Конфигурационный файл изменён!
+[2025-07-27 20:55:00.728] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 20:55:00.728] [info] Уровень логирования изменён на: INFO
+[2025-07-27 20:55:00.728] [info] Конфигурация успешно перезагружена
+[2025-07-27 20:55:03.831] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 20:55:03.831] [info] Stopping HTTP API
+[2025-07-27 20:55:03.831] [info] Stopping UDP server
+[2025-07-27 20:55:03.831] [error] recvfrom error: Success
+[2025-07-27 20:55:03.831] [info] UDP server stopped
+[2025-07-27 20:55:03.831] [info] Stopping monitoring
+[2025-07-27 20:55:03.835] [info] Мониторинг конфигурации остановлен
+[2025-07-27 20:55:03.835] [info] Total sessions to close: 0
+[2025-07-27 20:55:03.835] [info] Application shutdown completed in 0 ms
+[2025-07-27 20:55:13.016] [info] Уровень: INFO
+[2025-07-27 20:55:13.017] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:55:13.017] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:55:13.017] [info] Starting PGW services
+[2025-07-27 20:55:13.017] [info] Мониторинг конфигурации запущен
+[2025-07-27 20:55:13.017] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 20:55:13.017] [info] All PGW services started successfully
+[2025-07-27 20:55:23.746] [info] Конфигурационный файл изменён!
+[2025-07-27 20:55:23.746] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 20:55:23.747] [info] Уровень логирования изменён на: DEBUG
+[2025-07-27 20:55:23.747] [info] Конфигурация успешно перезагружена
+[2025-07-27 20:55:27.928] [debug] Processing IMSI: 001010123756765
+[2025-07-27 20:55:29.956] [debug] Processing IMSI: 001010123756764
+[2025-07-27 20:55:31.347] [debug] Processing IMSI: 001010123756754
+[2025-07-27 20:55:47.123] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 20:55:47.123] [info] Stopping HTTP API
+[2025-07-27 20:55:47.123] [info] Stopping UDP server
+[2025-07-27 20:55:47.123] [info] UDP server stopped
+[2025-07-27 20:55:47.123] [info] Stopping monitoring
+[2025-07-27 20:55:47.128] [info] Мониторинг конфигурации остановлен
+[2025-07-27 20:55:47.128] [info] Total sessions to close: 3
+[2025-07-27 20:55:47.128] [debug] Session removed for connection
+[2025-07-27 20:55:47.128] [debug] Closed session for IMSI: 001010123756765
+[2025-07-27 20:55:47.128] [debug] Session removed for connection
+[2025-07-27 20:55:47.128] [debug] Closed session for IMSI: 001010123756764
+[2025-07-27 20:55:47.128] [debug] Session removed for connection
+[2025-07-27 20:55:47.128] [debug] Closed session for IMSI: 001010123756754
+[2025-07-27 20:55:47.128] [info] Progress: 100.0% (3 of 3)
+[2025-07-27 20:55:48.128] [info] Application shutdown completed in 1000 ms
+[2025-07-27 20:57:33.974] [info] Уровень: DEBUG
+[2025-07-27 20:57:33.975] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 20:57:33.975] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 20:57:33.975] [info] Starting PGW services
+[2025-07-27 20:57:33.975] [debug] Запуск мониторинга конфигурации
+[2025-07-27 20:57:33.975] [info] Мониторинг конфигурации запущен
+[2025-07-27 20:57:33.975] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 20:57:33.975] [info] All PGW services started successfully
+[2025-07-27 20:57:49.044] [info] Конфигурационный файл изменён!
+[2025-07-27 20:57:49.044] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 20:57:49.044] [info] Уровень логирования изменён на: INFO
+[2025-07-27 20:57:49.045] [info] Конфигурация успешно перезагружена
+[2025-07-27 20:58:05.642] [info] Конфигурационный файл изменён!
+[2025-07-27 20:58:05.643] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 20:58:05.643] [info] Уровень логирования изменён на: DEBUG
+[2025-07-27 20:58:05.643] [info] Конфигурация успешно перезагружена
+[2025-07-27 20:58:07.386] [info] Конфигурационный файл изменён!
+[2025-07-27 20:58:07.386] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 20:58:07.386] [info] Конфигурация успешно перезагружена
+[2025-07-27 20:58:13.981] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 20:58:13.981] [info] Stopping HTTP API
+[2025-07-27 20:58:13.981] [info] Stopping UDP server
+[2025-07-27 20:58:13.982] [info] UDP server stopped
+[2025-07-27 20:58:13.982] [info] Stopping monitoring
+[2025-07-27 20:58:13.982] [info] Мониторинг конфигурации остановлен
+[2025-07-27 20:58:13.982] [info] Total sessions to close: 1
+[2025-07-27 20:58:13.982] [debug] Session removed for connection
+[2025-07-27 20:58:13.982] [debug] Closed session for IMSI: 001010123756754
+[2025-07-27 20:58:13.982] [info] Progress: 100.0% (1 of 1)
+[2025-07-27 20:58:14.982] [info] Application shutdown completed in 1000 ms
+[2025-07-27 21:06:08.347] [info] Уровень: DEBUG
+[2025-07-27 21:06:08.355] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 21:06:08.355] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 21:06:08.355] [info] Starting PGW services
+[2025-07-27 21:06:08.355] [debug] Запуск мониторинга конфигурации
+[2025-07-27 21:06:08.355] [info] Мониторинг конфигурации запущен
+[2025-07-27 21:06:08.356] [info] UDP server started on 127.0.0.1:49155
+[2025-07-27 21:06:08.356] [info] All PGW services started successfully
+[2025-07-27 21:06:11.460] [debug] Обрабатывается IMSI - 001010123756754
+[2025-07-27 21:06:19.358] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 21:06:19.358] [info] Stopping HTTP API
+[2025-07-27 21:06:19.359] [info] Stopping UDP server
+[2025-07-27 21:06:19.359] [info] UDP server stopped
+[2025-07-27 21:06:19.359] [info] Stopping monitoring
+[2025-07-27 21:06:19.364] [info] Мониторинг конфигурации остановлен
+[2025-07-27 21:06:19.364] [info] Total sessions to close: 1
+[2025-07-27 21:06:19.364] [debug] Session removed for connection
+[2025-07-27 21:06:19.364] [debug] Closed session for IMSI: 001010123756754
+[2025-07-27 21:06:19.364] [info] Progress: 100.0% (1 of 1)
+[2025-07-27 21:06:20.364] [info] Application shutdown completed in 1000 ms
+[2025-07-27 21:48:20.481] [info] Уровень логирования изменён на: DEBUG
+[2025-07-27 21:48:20.481] [info] Конфигурация успешно перезагружена
+[2025-07-27 21:48:39.880] [info] Starting graceful shutdown (rate: 10/sec)...
+[2025-07-27 21:48:39.880] [info] Stopping HTTP API
+[2025-07-27 21:48:39.880] [info] Stopping UDP server
+[2025-07-27 21:48:39.881] [info] Stopping monitoring
+[2025-07-27 21:48:39.884] [info] Мониторинг конфигурации остановлен
+[2025-07-27 21:48:39.884] [info] Total sessions to close: 2
+[2025-07-27 21:48:39.884] [debug] Session removed for connection
+[2025-07-27 21:48:39.884] [debug] Closed session for IMSI: 001010123756754
+[2025-07-27 21:48:39.884] [debug] Session removed for connection
+[2025-07-27 21:48:39.884] [debug] Closed session for IMSI: 001010123756754
+[2025-07-27 21:48:39.884] [info] Progress: 100.0% (2 of 2)
+[2025-07-27 21:48:40.884] [info] Application shutdown completed in 1000 ms
+[2025-07-27 22:00:38.599] [info] Уровень: DEBUG
+[2025-07-27 22:00:38.607] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 22:00:38.607] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 22:00:38.607] [info] Starting PGW services
+[2025-07-27 22:00:38.607] [debug] Запуск мониторинга конфигурации
+[2025-07-27 22:00:38.607] [info] Мониторинг конфигурации запущен
+[2025-07-27 22:00:38.608] [info] All PGW services started successfully
+[2025-07-27 22:01:25.992] [info] Конфигурационный файл изменён!
+[2025-07-27 22:01:25.992] [info] Обнаружено изменение конфигурации, перезагружаем...
+[2025-07-27 22:01:25.992] [info] Уровень логирования изменён на: INFO
+[2025-07-27 22:01:25.992] [info] Конфигурация успешно перезагружена
+[2025-07-27 22:06:39.812] [info] Уровень: INFO
+[2025-07-27 22:06:39.813] [info] Initializing PGW with config: ../../pgw_server.json
+[2025-07-27 22:06:39.813] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 22:06:39.813] [critical] Fatal error: Bind failed: Address already in use
+[2025-07-27 22:52:59.647] [error] Ошибка recvfrom: Success
+[2025-07-27 22:53:13.667] [info] Уровень: DEBUG
+[2025-07-27 22:53:13.667] [info] Инициализация PGW: ../../pgw_server.json
+[2025-07-27 22:53:13.667] [info] Мониторинг конфигурации инициализирован
+[2025-07-27 22:53:13.667] [info] Запуск сервисов PGW
+[2025-07-27 22:53:13.667] [debug] Запуск мониторинга конфигурации
+[2025-07-27 22:53:13.668] [info] Мониторинг конфигурации активен
+[2025-07-27 22:53:13.668] [info] Все сервисы PGW успешно запущены
+[2025-07-27 22:53:13.668] [info] UDP сервер запущен на 127.0.0.1:49155
+[2025-07-27 22:53:46.565] [debug] Обработка IMSI: 090012332413567
+[2025-07-27 22:53:47.798] [debug] Обработка IMSI: 090012332413567
+[2025-07-27 22:53:48.394] [debug] Обработка IMSI: 090012332413567
+[2025-07-27 22:54:16.680] [debug] Сессия удалена
+[2025-07-27 22:54:16.680] [info] Сессия истекла для IMSI: 090012332413567
+[2025-07-27 22:54:18.681] [debug] Сессия удалена
+[2025-07-27 22:54:18.681] [info] Сессия истекла для IMSI: 090012332413567
+[2025-07-27 22:54:18.681] [debug] Сессия удалена
+[2025-07-27 22:54:18.681] [info] Сессия истекла для IMSI: 090012332413567
+[2025-07-27 22:54:28.037] [debug] Обработка IMSI: 001010123456789
+[2025-07-27 22:54:28.037] [info] IMSI 001010123456789 отклонен (в черном списке)
+[2025-07-27 22:55:42.347] [debug] Обработка IMSI: 001010123456789
+[2025-07-27 22:55:42.347] [info] IMSI 001010123456789 отклонен (в черном списке)
+[2025-07-27 22:56:36.969] [info] Обнаружено изменение конфигурационного файла!
+[2025-07-27 22:56:36.969] [info] Обнаружено изменение конфигурации, выполняется перезагрузка...
+[2025-07-27 22:56:36.969] [info] Уровень логирования изменен на: INFO
+[2025-07-27 22:56:36.969] [info] Конфигурация успешно перезагружена
+[2025-07-27 22:56:40.193] [info] IMSI 001010123456789 отклонен (в черном списке)
+[2025-07-27 22:56:54.321] [info] Обнаружено изменение конфигурационного файла!
+[2025-07-27 22:56:54.321] [info] Обнаружено изменение конфигурации, выполняется перезагрузка...
+[2025-07-27 22:56:54.321] [info] Уровень логирования изменен на: DEBUG
+[2025-07-27 22:56:54.321] [info] Конфигурация успешно перезагружена
+[2025-07-27 22:57:15.707] [debug] Сессия удалена
+[2025-07-27 22:57:15.707] [info] Сессия истекла для IMSI: 001010123456749
+[2025-07-27 22:57:29.309] [info] Начало плавного завершения работы
+[2025-07-27 22:57:29.309] [info] Остановка HTTP API
+[2025-07-27 22:57:29.309] [info] Остановка UDP сервера
+[2025-07-27 22:57:29.309] [info] UDP сервер остановлен
+[2025-07-27 22:57:29.310] [info] Остановка мониторинга
+[2025-07-27 22:57:29.313] [info] Мониторинг конфигурации остановлен
+[2025-07-27 22:57:29.313] [info] Всего сессий для закрытия: 0
+[2025-07-27 22:57:29.313] [info] Завершение работы приложения заняло 0 мс

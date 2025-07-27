@@ -23,6 +23,7 @@ target_include_directories(${OBJ_LIB} SYSTEM PUBLIC
         ${boost_asio_SOURCE_DIR}/include
         ${nlohmann_json_INCLUDE_DIRS}
         ${cpp-httplib_SOURCE_DIR}/include
+        ${spdlog_SOURCE_DIR}/include
 )
 
 target_include_directories(${OBJ_LIB} PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>")
@@ -38,4 +39,5 @@ target_link_libraries(${RUNNABLE}
         ${OBJ_LIB}
         ${Boost_SYSTEM_LIBRARY}
         # cpp-httplib
+        spdlog::spdlog
 )

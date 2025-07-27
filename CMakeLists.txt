@@ -8,6 +8,13 @@ endif()
 
 include(FetchContent)
 
+FetchContent_Declare(
+        spdlog
+        GIT_REPOSITORY https://github.com/gabime/spdlog.git
+        GIT_TAG v1.14.1
+)
+FetchContent_MakeAvailable(spdlog)
+
 find_package(nlohmann_json 3.12 QUIET)
 if(NOT nlohmann_json_FOUND)
     FetchContent_Declare(
@@ -28,16 +35,19 @@ if(NOT Boost_FOUND)
     FetchContent_MakeAvailable(boost_asio)
 endif()
 
+FetchContent_Declare(
+        cpp-httplib
+        GIT_REPOSITORY https://github.com/yhirose/cpp-httplib.git
+        GIT_TAG v0.18.6
+)
+FetchContent_MakeAvailable(cpp-httplib)
+
 configure_file(
         "${CMAKE_SOURCE_DIR}/configuration/pgw_server.json"
         "${CMAKE_BINARY_DIR}/pgw_server.json"
         COPYONLY
 )
 
-<<<<<<< Updated upstream
-add_subdirectory(src)
-add_subdirectory(test)
-=======
 configure_file(
         "${CMAKE_SOURCE_DIR}/configuration/pgw_client.json"
         "${CMAKE_BINARY_DIR}/pgw_client.json"
@@ -47,4 +57,3 @@ configure_file(
 add_subdirectory(server)
 add_subdirectory(test)
 add_subdirectory(client)
->>>>>>> Stashed changes
