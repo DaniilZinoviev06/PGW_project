@@ -32,6 +32,7 @@ server_configuration ServerConf::load_data_from_json(std::string file_path) {
         for (const auto& imsi : config["blacklist"]) {
             serv_conf.imsi_blacklist.push_back(imsi.get<std::string>());
         }
+        //std::cout << "Конфигурация считана\n";
     } catch (const json::exception& e) {
         throw std::runtime_error("Ошибка при попытке распарсить json - " + std::string(e.what()));
     } catch (const boost::system::system_error& e) {
@@ -84,12 +85,6 @@ void ServerConf::check_data(const server_configuration& config) {
     if (config.graceful_shutdown_rate == 0) {
         throw std::runtime_error("Параметр graceful не может быть равным 0");
     }
-}
 
-/*void ServerConf::file_surveillance() {
-    int inotifyFd = inotify_init();
-    if (inotifyFd == -1) {
-        std::cerr << "Создание файлого дескриптора прошло неудачно\n";
-    }
-    std::cout << "Файловый дискриптор создан\n";
-}*/
+    //std::cout << "Данные корректны\n";
+}

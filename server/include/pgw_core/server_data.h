@@ -28,13 +28,11 @@ public:
     ServerConf(ServerConf&&) = default;
     ServerConf& operator=(ServerConf&&) = default;
 
-    // void file_surveillance();
-
-    const server_configuration& get_conf() const { return data; }
+    [[nodiscard]] const server_configuration& get_conf() const { return data; }
 
     void check_data(const server_configuration& config);
 
-    static server_configuration load_data_from_json(std::string file_path);
+    server_configuration load_data_from_json(std::string file_path);
 
 private:
     server_configuration data;
