@@ -1,3 +1,6 @@
+ # !
+ <p>Теперь во время выполнения программы можно менять уровень логирования, для этого во время выполнения просто вносить изменения в файл build/pgw_server.json</p>
+
 <hr><div align="center">
   <a href="#about">О проекте</a>&ensp;&ensp;&ensp;
   <a href="#installation">Установка</a>&ensp;&ensp;&ensp;
@@ -46,7 +49,7 @@ test/simple_pgw_tests - тесты
 Запускаем клиент:
 ```
 ./pgw_client "001010000562401"
-curl "http://localhost:49156/check_subscriber?imsi=000134235345453"
+curl "http://localhost:49156/check_imsi?imsi=000134235345453"
 ```
 
 <h2 id="settings">:scroll: Конфигурация</h2>
